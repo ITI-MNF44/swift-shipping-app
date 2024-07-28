@@ -82,28 +82,23 @@ The Swift Shipping System follows an N-Tier Architecture to separate concerns an
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/your-repository-url.git
+    git clone https://github.com/ITI-MNF44/swift-shipping-app.git
     ```
 
-2. **Backend Setup**
-    - Navigate to the backend directory:
+2. **Project Setup**
+    - Navigate to the Project directory:
       ```bash
-      cd backend
+      cd swift-shipping-app
       ```
-    - Restore packages and build the project:
-      ```bash
-      dotnet restore
-      dotnet build
-      ```
-    - Run the project:
-      ```bash
-      dotnet run
-      ```
-
-3. **Frontend Setup**
+3. **Backend Setup**
+    - Go to server-side folder.
+    - Open the SwiftShipping.sln (double click on it to open it in visual studio).
+    - Build and run the project.
+      
+5. **Frontend Setup**
     - Navigate to the frontend directory:
       ```bash
-      cd frontend
+      cd client-side
       ```
     - Install dependencies:
       ```bash
