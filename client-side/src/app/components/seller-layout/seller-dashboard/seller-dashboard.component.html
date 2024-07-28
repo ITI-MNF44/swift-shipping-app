@@ -1,0 +1,41 @@
+<main id="main" class="main">
+    <section class="section admin-section">
+      <div class="pagetitle">
+        <nav>
+          <ol class="breadcrumb text-center">
+            <li class="breadcrumb-item">
+              <a href="index.html"> <i class="bi-house-fill text-dark"></i> </a>
+            </li>
+            <li class="breadcrumb-item">Seller</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        @for (item of seller_orders_status; track $index) {
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" style="cursor: pointer;">
+            <div class="card info-card" (click)="goToOrdersByStatusPage(item.id)">
+              <div class="card-body">
+                <div class=" d-flex">
+                  <p class="card-title">{{item.name}}</p>
+    
+                  <div class="d-flex align-items-center ms-auto">
+                    <div
+                      class="card-icon rounded-circle d-flex align-items-center justify-content-center me-auto"
+                    >
+                      <i class="bi bi-cart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <h6>{{item.count}}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        }
+        
+      </div>
+    </section>
+  </main>
+  
